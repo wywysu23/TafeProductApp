@@ -78,5 +78,16 @@ namespace ProductApps
         {
             ChargePayment = Price * Quantity + 25;
         }
+
+        private decimal chargeWrapPayment;
+        public decimal ChargeWrapPayment
+        {
+            get { return chargeWrapPayment; }
+            set { chargeWrapPayment = value; }
+        }
+        public void calChargeWrapPayment()
+        {
+            ChargeWrapPayment = Price * Quantity + 25 + 5;
+        }
     }
 }
